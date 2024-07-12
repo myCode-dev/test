@@ -1,0 +1,345 @@
+<html>
+<head>
+    <title>BIN & RU | Wedding Invitation</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Save the Date for the wedding of Bin and RU!">
+    <meta property="og:title" content="BIN & RU | Wedding Invitation">
+    <meta property="og:description" content="Save the Date for the wedding of Bin and RU!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d0e563f35.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="celebrate-section">
+        <div class="celebrate-pic"></div>
+        <h2 class="active">我們結婚了！</h2>
+        <p class="active">相敬如彬，賓至如歸<i>！</i></p>
+    </div>
+
+    <div class="intro">
+        <div class="intro-box groom">
+            <div class="pic active"></div>
+            <div class="intro-content active">
+                <p>intro intro intro</p>
+                <p>intro intro intro</p>
+                <p>intro intro intro</p>
+            </div>
+        </div>
+        <div class="name-box">
+            <h2>蕭文彬</h2>
+            <span class="theX">♡</span>
+            <h2>廖婕如</h2>
+        </div>
+        <div class="intro-box bride">
+            <div class="pic active"></div>
+            <div class="intro-content active">
+                <p>intro intro intro</p>
+                <p>intro intro intro</p>
+                <p>intro intro intro</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="invite">
+        <div class="invite-pic active">
+            <div id="invite-pic1"></div>
+            <div id="invite-pic2"></div>
+            <div id="invite-pic3"></div>
+        </div>
+        <div class="invite-content active">
+            <h2 style="margin-top: 10px;">一起慶祝吧!</h2>
+            <p>2024年10月26日（六）</p>
+            <p style="margin-left: 18px;">邀請您於此日與我們一同慶祝</p>
+            <h2 class="special">如何抵達?</h2>
+            <div style="margin-bottom: 30px;">
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i>陽明山美軍俱樂部</p>
+                <p><a class="map-address" href="https://maps.app.goo.gl/wf1Gi5U4RBSmEZDp7">台北市士林區凱旋路49號</a></p>
+            </div> 
+            <div style="margin-bottom: 20px;">
+                <p><i class="fa-solid fa-train-subway" aria-hidden="true"></i>公共交通</p>
+                <p>捷運士林/劍潭站可搭乘紅5/260於山仔后派出所站下車</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p><i class="fa-solid fa-car-rear" aria-hidden="true"></i>自行駕車</p>
+                <p>可將車輛停至美軍俱樂部/草山小鎮停車場</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="schedule active">
+        <div style="display: flex; justify-content: center; width: 100%;">
+            <h2>Timeline</h2>
+        </div>
+        <div class="schedule-box active">
+            <div class="">
+                <p class="time test1">04:30PM</p>
+                <p class="activity test1">證婚儀式</p>
+            </div>
+            <span class="timeline" id="timeline1"><span></span></span>
+            <div class="">
+                <p class="time test2">05:00PM</p>
+                <p class="activity test2">合照</p>
+            </div>
+            <span class="timeline" id="timeline2"><span></span></span>
+            <div class="">
+                <p class="time test3">06:00PM</p>
+                <p class="activity test3">晚餐</p>
+            </div class="test1">
+            <span class="timeline" id="timeline3"><span></span></span>
+            <div class="">
+                <p class="time test4">07:00PM</p>
+                <p class="activity test4">第一支舞</p>
+            </div>
+            <span class="timeline" id="timeline4"><span></span></span>
+            <div>
+                <p class="time test5">07:30PM</p>
+                <p class="activity test5">PARTY!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="dresscode">
+        <div class="dresscode-box active">
+            <div class="dresscode-img"></div>
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <h2>Dress code</h2>
+            </div>
+            <div id="dresscode-content">
+                <div id="dresscode-grid">
+                    <div class="circle" id="circle1"></div>
+                    <div>WHITE</div>
+                    <div class="circle" id="circle2"></div>
+                    <div>BEIGE</div>
+                    <div class="circle" id="circle3"></div>
+                    <div>DARK BLUE</div>
+                    <div class="circle" id="circle4"></div>
+                    <div>GREY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+
+    <div class="photo-video">
+        <div class="photo-area" style="position: relative;">
+            <div class="heart" style="position: absolute; top:-60px; z-index: 2;">
+                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">婚</div>
+            </div>
+            <div class="heart" style="position: absolute; top:-60px; left: 50px; z-index: 2;">
+                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">紗</div>
+            </div>
+            <div class="slider-box">
+                <div class="slider">
+                    <div class="slider-photo" id="photo1"></div>
+                    <div class="slider-photo" id="photo2"></div>
+                    <div class="slider-photo" id="photo3"></div>
+                </div>
+                <div class="slider">
+                    <div class="slider-photo" id="photo4"></div>
+                    <div class="slider-photo" id="photo5"></div>
+                    <div class="slider-photo" id="photo6"></div>
+                </div>
+                <div class="slider">
+                    <div class="slider-photo" id="photo7"></div>
+                    <div class="slider-photo" id="photo8"></div>
+                    <div class="slider-photo" id="photo9"></div>
+                </div>
+            </div>
+            <div class="button-area">
+                <a href="javascript:void(0)" onclick="showgallery('photo-gallery')">MORE<br>PHOTO</a>
+            </div>
+        </div>
+        <div class="video-area" style="position: relative;">
+            <div class="heart" style="position: absolute; top:-60px; right: 0; sz-index: 2;">
+                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">錄</div>
+            </div>
+            <div class="heart" style="position: absolute; top:-60px; right: 50px; z-index: 2;">
+                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">側</div>
+            </div>
+            <div class="button-area">
+                <a href="javascript:void(0)" onclick="showgallery('video')">PLAY<br>VIDEO</a>
+            </div>
+            <div class="video-box"></div>
+        </div>
+
+    </div>
+
+    <a href="javascript:void(0)" id="closebutton" onclick="closegallery()">×</a>
+    <div id="gallery">
+        <div id="photo-gallery">
+            <div>
+                <div class="photo-gallery-box">
+                    <img src="1.png" alt="engagement photo">
+                    <img src="bride.jpg" alt="engagement photo">
+                    <img src="celebrate3.jpg" alt="engagement photo">
+                    <img src="celebrate1.jpg" alt="engagement photo">
+                    <img src="groom.jpg" alt="engagement photo">
+                    <img src="celebrate2.jpg" alt="engagement photo">
+                    <img src="12.jpg" alt="engagement photo">
+                    <img src="8.webp" alt="engagement photo">
+                    <img src="9.webp" alt="engagement photo">
+                    <img src="10.webp" alt="engagement photo">
+                    <img src="groom.jpg" alt="engagement photo">
+                </div>
+                <div class="photo-gallery-box">
+                    <img src="12.jpg" alt="engagement photo">
+                    <img src="celebrate2.jpg" alt="engagement photo">
+                    <img src="8.webp" alt="engagement photo">
+                    <img src="9.webp" alt="engagement photo">
+                    <img src="12.jpg" alt="engagement photo">
+                    <img src="1.png" alt="engagement photo">
+                    <img src="2.jpg" alt="engagement photo">
+                    <img src="bride.jpg" alt="engagement photo">
+                    <img src="celebrate1.jpg" alt="engagement photo">
+                </div>
+            </div>
+            <!--<p>photo by <a href="https://www.instagram.com/jay.phahphinne/" target="_blank">Jay.phahphinne</a></p>-->
+        </div>
+
+        <div id="video">
+            <iframe src="https://player.vimeo.com/video/824695400?h=1d7e7200cf" width="640" height="360" loading="lazy" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+            <!--<p>video by <a href="https://www.instagram.com/jay.phahphinne/" target="_blank">jay.phahphinne</a></p>-->
+        </div>
+
+    </div>
+
+    <div class="countdown-area" id="countdown-area">
+        <h2>婚禮倒數</h2>
+
+        <p>距離婚禮還有</p>
+        <div class="countdown-area-box">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="mins"></div>
+            <div id="secs"></div>
+            <p>日</p>
+            <p>時</p>
+            <p>分</p>
+            <p>秒</p>
+        </div>
+        <p id="lookforward">好久不見，不如婚禮見！</p>
+        
+    </div>
+
+    <!-- <div id="RSVP" class="RSVP">
+        <h2>出席表單</h2>
+        <div id="RSVParea">
+            <iframe name="iframe_redirect" id="iframe_redirect" style="display:none;" onload="if(typeof sent_redirect!='undefined'){window.location='RSVP/';}"></iframe>
+            <form action="" method="post" onsubmit="sent_redirect=true" target="iframe_redirect" id="form1">
+                <div class="attend-area">
+                    <label for="Attend" class="attend" onclick="AttendFunction('form1')">出<br>席
+                        <input type="radio" id="Attend" value="出席" name="ATTEND" checked="">
+                        <span></span>
+                    </label>
+                    <label for="NotAttend" class="attend" onclick="AttendFunction('form1')">無<br>法<br>出<br>席
+                        <input type="radio" id="NotAttend" class="not-attend-checked" value="無法出席" name="ATTEND">
+                        <span></span>
+                    </label>
+                </div>
+
+                <div class="form-area">
+                    <div class="form-title"><label for="Name">姓名</label></div>
+                    <div>
+                        <input type="text" id="Name" name="NAME"><br>
+                    </div>
+                    
+                    <div class="form-title not-attend">參加人數（包含自己）</div>
+                    <div class="AandK not-attend">
+                        <label for="Adult">大人</label>
+                        <select id="Adult" name="ADULT">
+                            <option value=""></option>
+                            <option value="0" disabled="" hidden="">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <label for="Kid">小孩</label>
+                        <select id="Kid" name="KID">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-title not-attend"><label for="Vegan">素食人數</label></div>
+                    <div class="not-attend">
+                        <select id="Vegan" name="VEGAN">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="form-title"><label for="Invitation">是否需要紙本喜帖</label></div>
+                    <div>
+                        <select id="Invitation" name="INVITATION" onchange="InvitationFunction()">
+                            <option value=""></option>
+                            <option value="需要">需要</option>
+                            <option value="不需要">不需要</option>
+                        </select>
+                    </div>
+
+                    <div class="form-title"><label for="Address">喜帖收件地址</label></div>
+                    <div>
+                        <input type="text" id="Address" name="ADDRESS" placeholder="郵遞區號＋地址"><br>
+                    </div>
+
+
+                </div>
+                <div class="form-title">LEAVE A MESSAGE</div>
+                <textarea name="MESSAGE" rows="15" cols="20" placeholder="留言祝福我們吧!"></textarea>
+            </form>
+            
+            <input type="submit" value="送出" id="submitbutton" onclick="submitform1()">
+
+        </div>
+    </div>
+
+
+    <div id="submit-success">
+        <div>
+            <h2>感謝填寫</h2>
+            <div id="countdown">距離婚禮還剩 7078 天<br>23 小時 53 分鐘 52 秒<br>期待與你們見面！</div>
+            <a href="javascript:void(0)" id="submitokbutton" onclick="submitok()">確認</a>
+        </div>
+    </div> -->
+
+    <footer>
+        <a href="javascript:void(0)" onclick="JumpTo('header')">TOP</a>
+        <div>Let's celebrate on wedding !</div>
+        <!-- <div>
+            WEB DESIGN © <a href="https://littleroomweb.com/" target="_blank">LITTLEROOM</a>
+            PHOTO © <a href="https://www.instagram.com/jay.phahphinne/" target="_blank">Jay.phahphinne</a><br>
+            All rights reserved.
+        </div> -->
+    </footer>
+
+</body>
+<script src="index.js"></script>
+</html>
