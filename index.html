@@ -7,28 +7,34 @@
     <meta property="og:description" content="Save the Date for the wedding of Bin and RU!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5d0e563f35.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="celebrate-section">
+    <div class="celebrate-section" id="header">
         <div class="celebrate-pic"></div>
-        <h2 class="active">我們結婚了！</h2>
-        <p class="active">相敬如彬，賓至如歸<i>！</i></p>
+        <h2 class="active">我們結婚了!</h2>
+        <!-- <p class="active">相敬如彬，賓至如歸<i>！</i></p> -->
     </div>
 
     <div class="intro">
         <div class="intro-box groom">
             <div class="pic active"></div>
-            <div class="intro-content active">
+            <!-- <div class="intro-content active">
                 <p>intro intro intro</p>
                 <p>intro intro intro</p>
                 <p>intro intro intro</p>
-            </div>
+            </div> -->
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="name-box">
             <h2>蕭文彬</h2>
             <span class="theX">♡</span>
@@ -36,11 +42,11 @@
         </div>
         <div class="intro-box bride">
             <div class="pic active"></div>
-            <div class="intro-content active">
+            <!-- <div class="intro-content active">
                 <p>intro intro intro</p>
                 <p>intro intro intro</p>
                 <p>intro intro intro</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -61,7 +67,7 @@
             </div> 
             <div style="margin-bottom: 20px;">
                 <p><i class="fa-solid fa-train-subway" aria-hidden="true"></i>公共交通</p>
-                <p>捷運士林/劍潭站可搭乘紅5/260於山仔后派出所站下車</p>
+                <p>捷運士林/劍潭站可搭乘紅5/260於山仔后派出所下車</p>
             </div>
             <div style="margin-bottom: 20px;">
                 <p><i class="fa-solid fa-car-rear" aria-hidden="true"></i>自行駕車</p>
@@ -70,11 +76,11 @@
         </div>
     </div>
 
-    <div class="schedule active">
-        <div style="display: flex; justify-content: center; width: 100%;">
-            <h2>Timeline</h2>
-        </div>
+    <div class="schedule">
         <div class="schedule-box active">
+            <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 180px;">
+                <h2>Timeline</h2>
+            </div>
             <div class="">
                 <p class="time test1">04:30PM</p>
                 <p class="activity test1">證婚儀式</p>
@@ -125,7 +131,7 @@
 
     <!-- -->
 
-    <div class="photo-video">
+    <div class="photo-video" style="position: relative;">
         <div class="photo-area" style="position: relative;">
             <div class="heart" style="position: absolute; top:-60px; z-index: 2;">
                 <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">婚</div>
@@ -150,23 +156,10 @@
                     <div class="slider-photo" id="photo9"></div>
                 </div>
             </div>
-            <div class="button-area">
-                <a href="javascript:void(0)" onclick="showgallery('photo-gallery')">MORE<br>PHOTO</a>
-            </div>
         </div>
-        <div class="video-area" style="position: relative;">
-            <div class="heart" style="position: absolute; top:-60px; right: 0; sz-index: 2;">
-                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">錄</div>
-            </div>
-            <div class="heart" style="position: absolute; top:-60px; right: 50px; z-index: 2;">
-                <div style="position: absolute; top:2px; left: 15px; z-index: 3; color: #fff; font-size: 1.5em;">側</div>
-            </div>
-            <div class="button-area">
-                <a href="javascript:void(0)" onclick="showgallery('video')">PLAY<br>VIDEO</a>
-            </div>
-            <div class="video-box"></div>
+        <div style="position: absolute; top: 590; right: 10; font-size: 1.8vh; width: 150px; height: 40px; border: 1px solid rgb(165, 208, 234);; display: flex; justify-content: center; align-items: center;">
+            <a href="javascript:void(0)" onclick="showgallery('photo-gallery')">MORE PHOTO →</a>
         </div>
-
     </div>
 
     <a href="javascript:void(0)" id="closebutton" onclick="closegallery()">×</a>

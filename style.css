@@ -543,7 +543,7 @@ header>div{
 
 /*schedule*/
 .schedule {
-    padding: 180px 0 100px 0;
+    padding: 0 0 100px 0;
     overflow: hidden;
     position: relative;
     /* background-color: #d8e9ef; */
@@ -872,15 +872,15 @@ header>div{
 }
 
 .photo-video a:link, .photo-video a:visited{
-    min-width: 110px;
-    min-height: 110px;
-    line-height: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid rgb(165, 208, 234);
+    /* min-width: 110px;
+    min-height: 110px; */
+    /* line-height: 2; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* border-radius: 50%; */
+    /* border: 1px solid rgb(165, 208, 234); */
     color: rgb(165, 208, 234);
     text-decoration: none;
     letter-spacing: 3px;
@@ -888,12 +888,13 @@ header>div{
     transition: 0.5s;
 }
 
-.button-area{
+
+/* .button-area{
     width: 30%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
+} */
 
 .photo-video a:hover, .photo-video a:active{
     color:rgb(229, 245, 255);
@@ -907,9 +908,10 @@ header>div{
 
 
 .photo-area{
-    max-width: 1500px;
+    /* max-width: 1500px; */
     padding-right: 10px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+    width: 100%;
 }
 
 .photo-area h2, .video-area h2{
@@ -923,7 +925,7 @@ header>div{
 }
 
 .slider-box{
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -970,10 +972,11 @@ header>div{
 }
 
 .video-area{
-    max-width: 1000px;
+    /* max-width: 1000px; */
     padding: 0 20px;
     margin: auto;
     opacity: 0;
+    width: 100%;
 }
 
 .video-area.active{
@@ -982,7 +985,7 @@ header>div{
 }
 
 .video-box{
-    width: 70%;
+    width: %;
     min-width: 250px;
     height: 350px;
     margin-bottom: 100px;

@@ -22,7 +22,7 @@ function JumpTo(id) {
 
 //
 function reveal(){
-    var reveals = document.querySelectorAll(".celebrate-section,#lookforward,.countdown-area-box>div,.video-area,.dress-code>p,.color-box,.timeline,.map,.traffic-guide,.invite-content,.invite-pic,.intro-content,.pic,.time,.celebrate-section p,.celebrate-section h2,.schedule h2,.schedule-box,.dresscode-box")
+    var reveals = document.querySelectorAll(".celebrate-section,#lookforward,.countdown-area-box>div,.video-area,.dress-code>p,.color-box,.timeline,.map,.traffic-guide,.invite-content,.invite-pic,.intro-content,.pic,.time,.celebrate-section p,.celebrate-section h2,.schedule,.schedule-box,.dresscode-box")
     for (var i = 0; i < reveals.length; i++){
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
@@ -213,12 +213,12 @@ var x = setInterval(function() {
   document.getElementById("mins").innerHTML = minutes;
   document.getElementById("secs").innerHTML = seconds;
     
-  document.getElementById("countdown").innerHTML = "距離婚禮還剩 " + days + " 天<br>" + hours + " 小時 "
-  + minutes + " 分鐘 " + seconds + " 秒<br>期待與你們見面！";
+//   document.getElementById("countdown").innerHTML = "距離婚禮還剩 " + days + " 天<br>" + hours + " 小時 "
+//   + minutes + " 分鐘 " + seconds + " 秒<br>期待與你們見面！";
     
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown-area").innerHTML = "<h2>婚禮倒數</h2><br>IT'S TIME TO CELEBRATE !";
-    document.getElementById("countdown").innerHTML = "LET'S CELEBRATE !";
-  }
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("countdown-area").innerHTML = "<h2>婚禮倒數</h2><br>IT'S TIME TO CELEBRATE !";
+//     document.getElementById("countdown").innerHTML = "LET'S CELEBRATE !";
+//   }
 }, 1000);
