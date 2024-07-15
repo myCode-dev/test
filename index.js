@@ -22,7 +22,7 @@ function JumpTo(id) {
 
 //
 function reveal(){
-    var reveals = document.querySelectorAll(".celebrate-section,#lookforward,.countdown-area-box>div,.video-area,.dress-code>p,.color-box,.timeline,.map,.traffic-guide,.invite-content,.invite-pic,.intro-content,.pic,.time,.celebrate-section p,.celebrate-section h2,.schedule,.schedule-box,.dresscode-box")
+    var reveals = document.querySelectorAll(".celebrate-section,#lookforward,.countdown-area-box>div,.video-area,.dress-code>p,.color-box,.timeline,.map,.traffic-guide,.invite-content,.invite-pic,.intro-content,.pic,.time,.celebrate-section p,.celebrate-section h2,.schedule h2,.schedule-box,.dresscode-box")
     for (var i = 0; i < reveals.length; i++){
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
