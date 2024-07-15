@@ -1553,11 +1553,13 @@ button {
 	box-shadow: 0 0 0 2px rgb(165, 208, 234), 0 0.5em 0 0 whitesmoke;
 	transform: translate3d(0, 0.5em, -1em);
 }
-#swap:active {
-	background: whitesmoke;
-	transform: translate(0em, 0.75em);
+#swap:active, #swap.active { /* CSS for active state */
+    background: whitesmoke;
+    transform: translate(0em, 0.75em);
 }
-#swap:active::before {
-	box-shadow: 0 0 0 2px whitesmoke, 0 0 rgb(165, 208, 234);
-	transform: translate3d(0, 0, -1em);
+
+#swap:active::before, #swap.active::before { /* CSS for the ::before pseudo-element when active */
+    box-shadow: 0 0 0 2px whitesmoke, 0 0 rgb(165, 208, 234);
+    transform: translate3d(0, 0, -1em);
 }
+
