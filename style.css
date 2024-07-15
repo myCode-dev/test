@@ -1507,7 +1507,7 @@ footer div a:hover, footer div a:active{
 /* Dress Code */
 /* button styles from Katherine Kato's 3D button: https://codepen.io/kathykato/pen/gOOjgmP */
 
-button {
+.buttons {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
