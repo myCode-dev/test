@@ -222,3 +222,8 @@ var x = setInterval(function() {
 //     document.getElementById("countdown").innerHTML = "LET'S CELEBRATE !";
 //   }
 }, 1000);
+
+
+function goToGoogle() {
+    window.location = 'https://www.google.com';
+};
