@@ -50,5 +50,5 @@ var x = setInterval(function() {
 
 
 function showRSVP() {
-    window.location = 'https://www.google.com';
+    window.location = 'https://www.surveycake.com/s/08bAO';
 };
