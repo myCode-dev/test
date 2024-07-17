@@ -46,109 +46,6 @@ p{
     box-sizing: border-box;
 }
 
-#music-onoroff{
-    width: 100%;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    letter-spacing: 5px;
-    text-indent: 5px;
-}
-
-#music-onoroff>div{
-    background-color: rgb(165, 208, 234);
-    padding: 100px 40px;
-    position: relative;
-}
-
-#music-onoroff>div::before{
-    content: '';
-    position: absolute;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 95%;
-    height: 95%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-#music-onoroff a:link, #music-onoroff a:visited{
-    position: relative;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 5px 20px;
-    margin: 10px 0 40px 0;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-#music-onoroff a:link:last-of-type{
-    border: none;
-}
-
-#music-onoroff a:hover, #music-onoroff a:active{
-    color: rgb(165, 208, 234);
-    background-color: rgb(255, 255, 255);
-}
-
-.music-button{
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(83, 135, 170);
-    border: 1px solid rgba(83, 135, 170, 0.7);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 110;
-    animation: musicbutton 1.5s;
-}
-
-@keyframes musicbutton{
-    0%{
-        transform: rotate(-10deg);
-    }20%{
-        transform: rotate(10deg);
-    }40%{
-        transform: rotate(-10deg);
-    }60%{
-        transform: rotate(10deg);
-    }80%{
-        transform: rotate(-10deg);
-    }100%{
-        transform: rotate(0);
-    }
-}
-
-.music-off-line{
-    position: absolute;
-    width: 80%;
-    border-top: 1px solid rgba(83, 135, 170, 0.9);
-    transform: rotate(45deg);
-    transform-origin: top left;
-    top: 20%;
-    left: 25%;
-    transition: 0.5s;
-}
-
-.music-off-line.playmusic{
-    width: 0;
-}
-
 header{
     width: 100%;
     height: 100%;
@@ -209,28 +106,42 @@ header>div{
     /*animation: openingP 2s forwards 0.5s, openingline 2s forwards 2s;*/
 }
 
-/*.header-section2 p:last-of-type{
-    animation: openingP 2s forwards 1.5s, openingline 2s forwards 3s;
+.celebrate-text-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 85px;
 }
 
+.celebrate-text {
+    /* text-align: center; */
+    font-size: 1.7vh;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 28ch;
+    /* font-family: 'Pacifico', cursive; */
+    letter-spacing: 0.2em; /* Adjust letter-spacing to make characters closer */
+    animation: typing 4s steps(28, end) forwards, blink-caret .75s step-end infinite;
+}
 
-@keyframes openingP{
-    from{
-        color: rgba(165, 208, 234, 0);
-    }to{
-        color: rgba(165, 208, 234, 1);
+@keyframes typing {
+    from { 
+        width: 0; 
+        color: transparent;
+    }
+    to { 
+        width: 28ch; 
+        color: white;
     }
 }
 
-@keyframes openingline{
-    from{
-        background-size: 0.1em 100%, 0.1em 0;
-
-    }to{
-        background-size: 0.1em 0, 0.1em calc(100% - 7px);
-    }
-}*/
-
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
 
 .theX{
     display: inline-block;
@@ -250,10 +161,9 @@ header>div{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('images/2.jpg');
+    background-image: url('images/celebrate_pic.jpg');
     background-size: cover;
-    /* background-position: center; */
-    background-position-x: 40%;
+    background-position-x: 22%;
     background-repeat: no-repeat;
     opacity: 0;
     animation: fadeIn 3s ease forwards;  /* 应用动画，持续时间3秒，缓和效果，动画结束时保持最后一帧 */
@@ -300,6 +210,22 @@ header>div{
     transition-delay: 0.5s;
 }
 
+#marriage-announcement svg {
+    width: 100vw;
+    height: 100vh;
+}
+
+#we-re-got-married-text {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-text 10s forwards;
+}
+
+@keyframes draw-text {
+    from { stroke-dashoffset: 1000; }
+    to { stroke-dashoffset: 0; }
+}
+
 
 .intro{
     padding: 100px 0;
@@ -314,6 +240,25 @@ header>div{
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.groom .intro-text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    letter-spacing: 6px;
+    top: 50px;
+    left: -38px;
+    transform: rotate(90deg);
+
+}
+
+.bride .intro-text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    letter-spacing: 6px;
+    bottom: 50px;
+    right: -27px;
+    transform: rotate(90deg);
 }
 
 .bride .pic{
@@ -336,7 +281,7 @@ header>div{
 .groom .pic{
     background-image: url('images/groom.jpg');
     background-size: 146%;
-    background-position: 31% 69%;
+    background-position: 36% 59%;
     margin-right: 50px;
 }
 
@@ -1013,7 +958,7 @@ header>div{
     z-index: 101;
     right: 10px;
     top: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(165, 208, 234);
     font-size: 40px;
     font-weight: 700;
     text-decoration: none;
@@ -1027,8 +972,8 @@ header>div{
 
 #gallery{
     text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: rgba(165, 208, 234,0.95);
+    color: rgba(165, 208, 234,0.95);
+    background-color: #fff;
     position: fixed;
     z-index: 100;
     overflow-y: auto;
@@ -1069,6 +1014,7 @@ header>div{
 
 #photo-gallery img{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 #video{
@@ -1499,7 +1445,7 @@ footer div a:hover, footer div a:active{
     }
     .celebrate-pic{
         background-position-x: 10%;
-        background-position-y: 65%;
+        background-position-y: 68%;
     }
 }
 
@@ -1507,7 +1453,26 @@ footer div a:hover, footer div a:active{
     #empty{ width: 30%;}
     #dresscode-area{ width: 70%;}
     #dresscode-flower2{ opacity: 0.4;}
-
+    .celebrate-text-box{
+        /* width: 100%;  */
+        /* display: inline-block;  */
+        justify-content: flex-end; 
+        position: absolute; 
+        top: 100px;
+        right: 50px;
+    }
+    .celebrate-text {
+        /* text-align: center; */
+        font-size: 2.9vh;
+        color: transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid white;
+        width: 28ch;
+        /* font-family: 'Pacifico', cursive; */
+        letter-spacing: 0.2em; /* Adjust letter-spacing to make characters closer */
+        animation: typing 4s steps(28, end) forwards, blink-caret .75s step-end infinite;
+    }
 
 }
 
