@@ -84,7 +84,7 @@ header>div{
 .header-pic{
     width: 100%;
     height: 100%;
-    background-image: url('images/header_pic.jpg');
+    background-image: url('images/header_pic.webp');
     background-position: center;
     background-size: cover;
 }
@@ -161,7 +161,7 @@ header>div{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('images/celebrate_pic.jpg');
+    background-image: url('images/celebrate_pic.webp');
     background-size: cover;
     background-position-x: 22%;
     background-repeat: no-repeat;
@@ -279,14 +279,14 @@ header>div{
 }
 
 .groom .pic{
-    background-image: url('images/groom.jpg');
+    background-image: url('images/groom.webp');
     background-size: 146%;
     background-position: 36% 59%;
     margin-right: 50px;
 }
 
 .bride .pic{
-    background-image: url('images/bride.jpg');
+    background-image: url('images/bride.webp');
     background-size: 115%;
     background-position: 10% 50%;
     margin-left: 50px;
@@ -354,16 +354,16 @@ header>div{
 }
 
 #invite-pic1{
-    background-image: url('images/celebrate1.jpg');
+    background-image: url('images/celebrate1.webp');
     transform: translateX(50px);
 }
 #invite-pic2{
-    background-image: url('images/celebrate2.jpg');
+    background-image: url('images/celebrate2.webp');
     transform: translateX(-50px);
 
 }
 #invite-pic3{
-    background-image: url('images/celebrate3.jpg');
+    background-image: url('images/celebrate3.webp');
     transform: translateX(50px);
 
 }
@@ -656,7 +656,7 @@ header>div{
     position: absolute;
     width: 80%;
     height: 120%;
-    background-image: url('images/dressCode.jpg');
+    background-image: url('images/dressCode.webp');
     background-repeat: no-repeat;
     background-size: cover;
     left: -55%;
@@ -915,13 +915,13 @@ header>div{
 }
 
 #photo1, #photo4, #photo7{
-    background-image: url('images/slide1.jpg');
+    background-image: url('images/slide1.webp');
 }
 #photo2, #photo5, #photo8{
-    background-image: url('images/slide2.jpg');
+    background-image: url('images/slide2.webp');
 }
 #photo3, #photo6, #photo9{
-    background-image: url('images/slide3.jpg');
+    background-image: url('images/slide3.webp');
 }
 
 .video-area{
@@ -942,7 +942,7 @@ header>div{
     min-width: 250px;
     height: 350px;
     margin-bottom: 100px;
-    background-image: url('images/video_bg.jpg');
+    background-image: url('images/video_bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
