@@ -9,6 +9,12 @@
     <meta name="robots" content="noindex,nofollow">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" as="image" href="images/celebrate_pic.webp">
+    <link rel="preload" as="image" href="images/groom.webp">
+    <link rel="preload" as="image" href="images/bride.webp">
+    <link rel="preload" as="image" href="images/celebrate1.jpg">
+    <link rel="preload" as="image" href="images/celebrate2.webp">
+    <link rel="preload" as="image" href="images/celebrate3.webp">
+    <link rel="preload" as="image" href="images/dressCode.webp">
 </head>
 
 <body>
@@ -21,7 +27,7 @@
 
     <div class="intro">
         <div class="intro-box groom">
-            <div class="pic active"></div>
+            <div class="pic active lazy" data-bg="images/groom.webp"></div>
             <div class="intro-text">GROOM</div>
         </div>
         <br>
@@ -34,16 +40,16 @@
             <h2>廖婕如</h2>
         </div>
         <div class="intro-box bride">
-            <div class="pic active"></div>
+            <div class="pic active lazy" data-bg="images/bride.webp"></div>
             <div class="intro-text">BRIDE</div>
         </div>
     </div>
 
     <div class="invite">
         <div class="invite-pic active">
-            <div id="invite-pic1"></div>
-            <div id="invite-pic2"></div>
-            <div id="invite-pic3"></div>
+            <div id="invite-pic1" class="lazy" data-bg="images/celebrate1.webp"></div>
+            <div id="invite-pic2" class="lazy" data-bg="images/celebrate2.webp"></div>
+            <div id="invite-pic3" class="lazy" data-bg="images/celebrate3.webp"></div>
         </div>
         <div class="invite-content active">
             <h2 style="margin-top: 10px;">一起慶祝吧!</h2>
@@ -99,7 +105,7 @@
 
     <div id="dresscode">
         <div class="dresscode-box active">
-            <div class="dresscode-img"></div>
+            <div class="dresscode-img lazy" data-bg="images/dresscode.webp"></div>
             <div style="display: flex; justify-content: center; width: 100%;">
                 <h2>Dress code</h2>
             </div>
@@ -154,33 +160,33 @@
     <a href="javascript:void(0)" id="closebutton" onclick="closegallery()">×</a>
     <div id="gallery">
         <div id="photo-gallery">
-            <!-- <div>
+            <div>
                 <div class="photo-gallery-box">
-                    <img src="/images/gallery1.webp" alt="engagement photo">
-                    <img src="/images/gallery2.webp" alt="engagement photo1">
-                    <img src="/images/gallery3.webp" alt="engagement photo">
-                    <img src="/images/gallery4.webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (4).webp" alt="engagement photo">
-                    <img src="/images/gallery6.webp" alt="engagement photo">
-                    <img src="/images/gallery7.webp" alt="engagement photo1">
-                    <img src="/images/gallery8.webp" alt="engagement photo">
-                    <img src="/images/gallery9.webp" alt="engagement photo">
-                    <img src="/images/gallery10.webp" alt="engagement photo">
-                    <img src="/images/gallery11.webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (9).webp" alt="engagement photo">
+                    <img src="/images/gallery1.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery2.webp" alt="engagement photo1" loading="lazy">
+                    <img src="/images/gallery3.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery4.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (4).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery6.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery7.webp" alt="engagement photo1" loading="lazy">
+                    <img src="/images/gallery8.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery9.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery10.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery11.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (9).webp" alt="engagement photo" loading="lazy">
                 </div>
                 <div class="photo-gallery-box">
-                    <img src="/images/gallery_r1 (2).webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (1).webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (3).webp" alt="engagement photo">
-                    <img src="/images/gallery5.webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (5).webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (6).webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (7).webp" alt="engagement photo">
-                    <img src="/images/gallery_r1 (8).webp" alt="engagement photo">
-                    <img src="/images/gallery12.webp" alt="engagement photo">
+                    <img src="/images/gallery_r1 (2).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (1).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (3).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery5.webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (5).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (6).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (7).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery_r1 (8).webp" alt="engagement photo" loading="lazy">
+                    <img src="/images/gallery12.webp" alt="engagement photo" loading="lazy">
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
