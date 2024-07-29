@@ -52,30 +52,3 @@ var x = setInterval(function() {
 function showRSVP() {
     window.location = 'https://www.surveycake.com/s/08bAO';
 };
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const lazyElements = document.querySelectorAll(".lazy");
-
-//     if ("IntersectionObserver" in window) {
-//         let lazyObserver = new IntersectionObserver(function(entries, observer) {
-//             entries.forEach(function(entry) {
-//                 if (entry.isIntersecting) {
-//                     let lazyElement = entry.target;
-//                     lazyElement.style.backgroundImage = `url(${lazyElement.dataset.bg})`;
-//                     lazyElement.classList.remove("lazy");
-//                     lazyObserver.unobserve(lazyElement);
-//                 }
-//             });
-//         });
-
-//         lazyElements.forEach(function(lazyElement) {
-//             lazyObserver.observe(lazyElement);
-//         });
-//     } else {
-//         // Fallback for older browsers
-//         lazyElements.forEach(function(lazyElement) {
-//             lazyElement.style.backgroundImage = `url(${lazyElement.dataset.bg})`;
-//             lazyElement.classList.remove("lazy");
-//         });
-//     }
-// });
